@@ -43,7 +43,7 @@ public class MoodPandaTest extends BaseTest{
         User user = new User("liliya.yunusova.spare@gmail.com", "12345678");
         int numberPost = 1;
         boolean isPostDelete = loginPageService.login(user).editPost().deletePost(numberPost);
-        Assert.assertTrue(isPostDelete);
+        Assert.assertTrue(isPostDelete, "Post is not delete");
     }
 
 }
